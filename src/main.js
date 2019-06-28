@@ -1,8 +1,8 @@
-import './styles.css';
-import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { AgeCalculator } from './fridayproject5.js';
+// import './styles.css';
+// import $ from 'jquery';
+// import 'bootstrap';
+// // import 'bootstrap/dist/css/bootstrap.min.css';
+// import { AgeCalculator } from './fridayproject5.js';
 
 //front-end
 $(document).ready(function() {
@@ -15,7 +15,10 @@ let lifeExpectancy = "";
 let planetLifeExpectancy = "";
 
 //Front-end click function
-  $("#calculate").click(function(event){
+
+  $("#calculate").click(GalacticCalculator(event));
+
+ function GalacticCalculator(event) {
     event.preventDefault();
     let userDateOfBirth = parseInt($("#birthDayYear").val());
     if ($("#planet :selected").val() == "Mercury") {
@@ -38,6 +41,6 @@ let planetLifeExpectancy = "";
 // Function Output
   $("#output").text("You are " +  answer + " years old on the planet of " + $("#planet :selected").val());
   $("#output2").text(lifeExpectancy + " Is the average human life expectancy on the planet of " + $("#planet :selected").val());
-  });
+  }
 
 });
