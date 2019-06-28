@@ -1,4 +1,4 @@
-//1. User can input value for their Earth birthday in the input field;
+//1. User can input value for their Earth birthday in the input field; X
 //2. User can then from a drop down menu select a planet to convert their age to the selected planets age;
 //3. From there the user can click sumbit, and .click function will take in the users input via .val() method;
 //4. The planet age converter will be in the form of if/else statements apply math operators to the users age birthday based the selected planet;
