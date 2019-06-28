@@ -10,9 +10,9 @@
 //6. From there 80 would be multiplied in the function by the planets unique year (EX. 80 * .24 = 19.2) and it would take the product and subtract it from the users planet age. (EX. 49.6(lifeExpectancy) - 13.02(myPlanetAge)= specified planets life expectancy.)
 //7. The results would be spitted back to the user in a <p> tag and then everyone is happy.
 
-describe('GalacticCalculator', function() {
+describe('calculator', function() {
 
-  it('should test whether a Triangle has three sides', function() {
+  it('should test ', function() {
     //Test content will go here.
   });
 });
