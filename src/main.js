@@ -6,20 +6,18 @@
 
 //front-end
 $(document).ready(function() {
-console.log("Hello World");
-console.log(Date());
-let year = new Date().getFullYear();
+
+//Variables
+const year = new Date().getFullYear();
+const averageLifeExpectancy = 80;
 let answer = "";
 let lifeExpectancy = "";
 let planetLifeExpectancy = "";
-let averageLifeExpectancy = 80;
 
-// let mercury = $("option:value[1]")
-
+//Front-end click function
   $("#calculate").click(function(event){
     event.preventDefault();
     let userDateOfBirth = parseInt($("#birthDayYear").val());
-    let year = new Date().getFullYear();
     if ($("#planet :selected").val() == "Mercury") {
        answer = (year - userDateOfBirth) * .24;
        planetLifeExpectancy = averageLifeExpectancy * .24;
@@ -37,13 +35,9 @@ let averageLifeExpectancy = 80;
        planetLifeExpectancy = averageLifeExpectancy * 11.86;
       lifeExpectancy = planetLifeExpectancy - answer;
     }
-
-console.log(year - 2000);
-console.log($("#planet :selected").val());
-console.log(answer);
-          // console.log(answer);
-  $("#output").text("You are " answer + " years old on the planet of " + $("#planet :selected").val());
+// Function Output
+  $("#output").text("You are " +  answer + " years old on the planet of " + $("#planet :selected").val());
   $("#output2").text(lifeExpectancy + " Is the average human life expectancy on the planet of " + $("#planet :selected").val());
   });
-// console.log(year - 2000);
+
 });
