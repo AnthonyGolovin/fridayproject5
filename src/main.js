@@ -16,10 +16,9 @@ let planetLifeExpectancy = "";
 
 //Front-end click function
 
-  $("#calculate").click(GalacticCalculator(event));
-
- function GalacticCalculator(event) {
-    event.preventDefault();
+//Added for testing reasons;
+  export function calculator() {
+    // event.preventDefault();
     let userDateOfBirth = parseInt($("#birthDayYear").val());
     if ($("#planet :selected").val() == "Mercury") {
        answer = (year - userDateOfBirth) * .24;
@@ -42,5 +41,8 @@ let planetLifeExpectancy = "";
   $("#output").text("You are " +  answer + " years old on the planet of " + $("#planet :selected").val());
   $("#output2").text(lifeExpectancy + " Is the average human life expectancy on the planet of " + $("#planet :selected").val());
   }
+  $("#calculate").click( function(event) {
+    event.preventDefault();
+    calculator();  });
 
 });
