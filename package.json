@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+    "test": "karma start karma.conf.js"
+
   },
   "author": "",
   "license": "ISC",
