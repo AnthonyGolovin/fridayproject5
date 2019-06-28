@@ -9,26 +9,28 @@ $(document).ready(function() {
 console.log("Hello World");
 console.log(Date());
 let year = new Date().getFullYear();
+let answer = "";
 // let mercury = $("option:value[1]")
 
   $("#calculate").click(function(event){
     event.preventDefault();
     let userDateOfBirth = parseInt($("#birthDayYear").val());
     let year = new Date().getFullYear();
-    if ($("#planet option:selected").val().equals("Mercury") == true) {
-      let answer = userDateOfBirth * .24 - year;
+    if ($("#planet :selected").val() == "Mercury") {
+       answer = (year - userDateOfBirth) * .24;
     } else if ($("#planet :selected").val() == "Venus") {
-      let answer = userDateOfBirth * .62 - year;
+       answer = (year - userDateOfBirth) * .62;
     } else if ($("#planet :selected").val() == "Mars") {
-      let answer = userDateOfBirth * 1.88 - year;
+       answer = (year - userDateOfBirth) * 1.88;
     } else if ($("#planet :selected").val() == "Jupiter") {
-      let answer = userDateOfBirth * 11.86 - year;
+       answer = (year - userDateOfBirth) * 11.86;
           }
+
 console.log(year - 2000);
 console.log($("#planet :selected").val());
 console.log(answer);
           // console.log(answer);
-  $("output").text();
+  $("#output").text(answer);
   });
 // console.log(year - 2000);
 });
