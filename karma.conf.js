@@ -6,14 +6,14 @@ module.exports = function(config) {
     frameworks: ['jquery-3.2.1', 'jasmine'],
     files: [
       'src/*.js',
-      'spec/*spec.js'
+      'spec/*specs.js'
     ],
     webpack: webpackConfig,
     exclude: [
     ],
     preprocessors: {
       'src/*.js': ['webpack', 'sourcemap'],
-      'spec/*spec.js': ['webpack', 'sourcemap']
+      'spec/*specs.js': ['webpack', 'sourcemap']
     },
     plugins: [
       'karma-jquery',

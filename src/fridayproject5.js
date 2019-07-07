@@ -1,6 +1,2 @@
-// 
-// export function AgeCalculator() {
-// let currentYear = new getFullYear(year);
-// let beb = 5;
-// return beb;
-// }
+//BackEnd
+//I Didnt have any back end logic in this case.

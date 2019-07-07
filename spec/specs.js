@@ -9,10 +9,30 @@
 //5. Once the age is calculated there will be a second aspect to the if/else statement that assumes everyones life expectancy is 80 years old.
 //6. From there 80 would be multiplied in the function by the planets unique year (EX. 80 * .24 = 19.2) and it would take the product and subtract it from the users planet age. (EX. 49.6(lifeExpectancy) - 13.02(myPlanetAge)= specified planets life expectancy.)
 //7. The results would be spitted back to the user in a <p> tag and then everyone is happy.
+// import { calculator } from './../src/main.js'
+// var calculator = require('./../src/main.js').calculatorModule;
+// import calculator from "./../src/main.js";
+// import Triangle from "./../src/main.js";
+
+// describe('Triangle', function() {
+//
+//   it('should correctly determine whether three lengths can be made into a triangle', function() {
+//     var notTriangle = new Triangle(3,9,22);
+//     expect(notTriangle.checkType()).toEqual("not a triangle");
+//   });
+//
+// });
 
 describe('calculator', function() {
 
-  it('should test ', function() {
+  it('It should take the selected planet and user date of birth to calculate to find the users planet age', function() {
+    expect(allVariables).toBeDefined();
+  });
+  it('It should take the selected planet and user date of birth to calculate to find the users planet age', function() {
+    expect()
+  });
+  it('It should take the selected planet and user date of birth to calculate to find the users planet age', function() {
+    expect()
+  });
     //Test content will go here.
   });
-});

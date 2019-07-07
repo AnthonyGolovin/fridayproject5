@@ -6,7 +6,7 @@
   "scripts": {
     "test": "karma start karma.conf.js",
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build && webpack-dev-server --open --mode development",
     "watch": "webpack --watch",
     "lint": "eslint src/*.js"
   },
@@ -41,14 +41,14 @@
     "karma-webpack": "^2.0.13",
     "style-loader": "^0.20.2",
     "uglifyjs-webpack-plugin": "^1.2.2",
-    "webpack-cli": "^2.0.9",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^2.1.5",
     "webpack-dev-server": "^3.1.0"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "es6": "0.0.7",
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0",
-    "webpack": "4.19.1"
+    "popper.js": "^1.15.0"
   }
 }
